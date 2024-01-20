@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Hero } from "./components";
+import { Navbar, Hero, Experience, Skills, About } from "./components";
 import styles from "./styles";
 
 function App() {
@@ -13,6 +13,13 @@ function App() {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
+        </div>
+      </div>
+      <div
+        className={`bg-primary ${styles.paddingX} ${styles.paddingY} h-[52.18vh]`}
+      >
+        <div className={styles.boxWidth}>
+          <Experience /> <Skills /> <About />
         </div>
       </div>
     </div>
