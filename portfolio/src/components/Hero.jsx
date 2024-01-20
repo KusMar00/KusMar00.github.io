@@ -16,8 +16,8 @@ const Hero = () => (
         Developer
       </h1>
       <p className="mt-7">
-        I build user friendly web solutions <br />
-        using modern technologies
+        I'm a developer based in Copenhagen, Denmark. I build user friendly web
+        solutions using modern technologies.
       </p>
       <Button text="Get in Touch" styles="mt-7" />
     </div>
