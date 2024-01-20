@@ -6,10 +6,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="flex justify-between items-center w-full font-poppins py-6">
-      <div className="flex-1 flex w-[250px] xl:text-3xl text-xl text-white items-center">
+      <a
+        href="#home"
+        className="flex-1 flex w-[250px] xl:text-3xl text-xl text-white items-center"
+      >
         <HiCode className="mr-3 xl:text-5xl text-3xl text-secondary" />
         <span>KusMar00.</span>
-      </div>
+      </a>
+
       <ul className="list-none sm:flex hidden flex-1 justify-end items-center">
         {navLinks.map((link, index) => (
           <li
