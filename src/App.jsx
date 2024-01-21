@@ -16,7 +16,7 @@ function App() {
         </div>
       </div>
       <div
-        className={`bg-primary ${styles.paddingX} ${styles.paddingY} h-[52.18vh]`}
+        className={`bg-primary ${styles.paddingX} ${styles.flexStart} h-[52.18vh]`}
       >
         <div className={styles.boxWidth}>
           <Experience /> <Skills /> <About />

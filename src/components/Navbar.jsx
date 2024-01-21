@@ -17,13 +17,12 @@ const Navbar = () => {
       <ul className="list-none sm:flex hidden flex-1 justify-end items-center">
         {navLinks.map((link, index) => (
           <li
+            key={link.id}
             className={`font-poppins font-normal cursor-pointer ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             } text-white`}
           >
-            <a key={link.id} href={`#${link.id}`}>
-              {link.title}
-            </a>
+            <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>
