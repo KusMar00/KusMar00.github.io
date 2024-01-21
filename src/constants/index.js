@@ -16,20 +16,21 @@ export const navLinks = [
 
 export const skills = [
   {
+    id: "languages",
+    title: "Languages",
+    skills: ["Python", "C#", "F#", "Java", "Go"],
+  },
+  {
     id: "frontend",
     title: "Frontend",
-    skills: ["JS/TS, ReactJS, Tailwind, MUI"],
+    skills: ["JS/TS", "ReactJS", "Tailwind", "MUI"],
   },
   {
     id: "backend",
     title: "Backend",
     skills: ["NodeJS", "ASP.NET", "PostgreSQL", "REST API", "Protobuf"],
   },
-  {
-    id: "languages",
-    title: "Other Languages",
-    skills: ["C#", "Java", "Go", "Python", "F#"],
-  },
+
   {
     id: "softSkills",
     title: "Soft Skills",
