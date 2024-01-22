@@ -19,7 +19,7 @@ const Hero = () => (
         I'm a developer based in Copenhagen, Denmark. I build user friendly web
         solutions using modern technologies.
       </p>
-      <Button text="Get in Touch" styles="mt-7" />
+      <Button link="#contact" text="Get in Touch" styles="mt-7" />
     </div>
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <img

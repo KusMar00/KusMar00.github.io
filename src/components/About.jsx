@@ -7,7 +7,7 @@ const About = () => {
         About<span className="text-secondary">.</span>
       </h2>
       <p className="font-poppins text-white text-xl mt-10">
-        I'm 23 years old living in Copenhagen . I recently graduated from the
+        I'm 23 years old living in Copenhagen. I recently graduated from the
         IT-Univeristy of Copenhagen with a BSc in Software Development, and am
         now looking for a workplace where i can apply my skills. I dream of
         working as a full-stack web developer but i also have a keen eye for
