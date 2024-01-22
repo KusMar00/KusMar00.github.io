@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Hero, Experience, Skills, About } from "./components";
+import { Navbar, Hero, Experience, Skills, About, Footer } from "./components";
 import styles from "./styles";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
-          <Experience /> <Skills /> <About />
+          <Experience /> <Skills /> <About /> <Footer />
         </div>
       </div>
     </div>
