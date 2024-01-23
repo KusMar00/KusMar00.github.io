@@ -92,7 +92,7 @@ const Contact = () => {
           <input
             className=" w-full h-[80px] bg-zinc-700 rounded text-white border-2 border-solid border-zinc-700 hover:border-secondary"
             type="submit"
-            value="Send"
+            value="Send Now"
           />
         </form>
       </div>

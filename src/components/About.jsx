@@ -1,4 +1,5 @@
 import styles from "../styles";
+import NowPlaying from "./NowPlaying";
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
         make coffee in complicated ways (Espresso, V60). I am also a huge music
         nerd, and i try to listen as much as possible.
       </p>
+      <NowPlaying />
     </section>
   );
 };
