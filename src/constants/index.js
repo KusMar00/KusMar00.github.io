@@ -38,29 +38,26 @@ export const skills = [
   },
 ];
 
-export const contactInfo = [
+export const experience = [
   {
-    id: "linkedin",
-    title: "LinkedIn",
-    text: "@MarkusJohansen",
-    link: "https://www.linkedin.com/in/markus-kildeb%C3%A6k-raun-johansen-7215561b4/",
+    id: "itu",
+    title: "BSc, Software Development",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
+    tags: [],
   },
   {
-    id: "github",
-    title: "Github",
-    text: "@KusMar00",
-    link: "https://github.com/KusMar00",
+    id: "satlas-news",
+    title: "Satlas News",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
+    tags: [],
   },
   {
-    id: "mail",
-    title: "Mail",
-    text: "markusraunjohansen@gmail.com",
-    link: "mailto: markusraunjohansen@gmail.com",
-  },
-  {
-    id: "phone",
-    title: "Phone",
-    text: "+45 60 15 16 95",
-    link: "tel:+4560151695",
+    id: "portfolio",
+    title: "Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
+    tags: ["ReactJS", "Tailwind", "Responsive Design", "Spotify API"],
   },
 ];
