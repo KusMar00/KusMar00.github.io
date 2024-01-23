@@ -16,8 +16,9 @@ const About = () => {
         In my free time i enjoy spending time working on small side projects,
         like this portfolio and other fun stuff. When i'm not writing code i
         like to go for a run, throw plastic discs at baskets (play disc golf) or
-        make coffee in complicated ways (Espresso, V60). I am also a huge music
-        nerd, and i try to listen as much as possible.
+        make coffee in complicated ways (Espresso, V60). <br /> <br /> I am also
+        a huge music nerd, and i try to listen as much as possible. Check out
+        what i'm currently listening to...
       </p>
       <NowPlaying />
     </section>
