@@ -1,3 +1,5 @@
+import { portfolio } from "../assets";
+
 export const navLinks = [
   {
     id: "experience",
@@ -45,6 +47,7 @@ export const experience = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
     tags: [],
+    img: "",
   },
   {
     id: "satlas-news",
@@ -52,6 +55,7 @@ export const experience = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
     tags: [],
+    img: "",
   },
   {
     id: "portfolio",
@@ -59,5 +63,6 @@ export const experience = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis fringilla orci, sit amet aliquet massa. Integer in laoreet eros. Curabitur auctor et diam in porttitor. In ut tellus id lorem laoreet vehicula. Morbi elit nibh, accumsan vitae ipsum vitae, laoreet malesuada nibh. Integer a nunc lorem. Vivamus pretium eu.",
     tags: ["ReactJS", "Tailwind", "Responsive Design", "Spotify API"],
+    img: portfolio,
   },
 ];

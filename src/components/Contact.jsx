@@ -32,7 +32,7 @@ const Contact = () => {
         Contact<span className="text-secondary">.</span>
       </h2>
       <div className="mt-10 flex md:flex-row flex-col justify-between items-center">
-        <div className="flex flex-col justify-around items-center md:w-[47%] w-full text-white font-poppins text-xl bg-zinc-800 rounded-xl h-[320px] p-10 border-2 border-solid border-zinc-800 hover:border-secondary">
+        <div className="flex flex-col justify-around items-center md:w-[49%] w-full text-white font-poppins text-xl bg-zinc-800 rounded-xl h-[320px] p-10 border-2 border-solid border-zinc-800 hover:border-secondary">
           <p>
             Are you interested in working together? Feel free to contact me
             using any of the following platforms:
@@ -65,7 +65,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="md:mt-0 mt-6 text-black flex flex-col justify-around items-center md:w-[47%] w-full font-poppins text-xl bg-zinc-800 rounded-xl h-[320px] p-8 border-2 border-solid border-zinc-800 hover:border-secondary"
+          className="md:mt-0 mt-6 text-black flex flex-col justify-around items-center md:w-[49%] w-full font-poppins text-xl bg-zinc-800 rounded-xl h-[320px] p-8 border-2 border-solid border-zinc-800 hover:border-secondary"
         >
           <div className="w-full flex justify-between items-center">
             <input
