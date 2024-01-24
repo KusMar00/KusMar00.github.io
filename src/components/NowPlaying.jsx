@@ -5,6 +5,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 const NowPlaying = () => {
   const [loading, setLoading] = useState(true);
   const [result, setResult] = useState({});
+  const [refresh, setRefresh] = useState(false);
 
   const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
   const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
@@ -73,8 +74,12 @@ const NowPlaying = () => {
     ]).then((results) => {
       setResult(results[0]);
       setLoading(false);
+      const timeoutId = setTimeout(() => {
+        setRefresh(() => !refresh);
+      }, 30000);
+      return () => clearTimeout(timeoutId);
     });
-  }, []);
+  }, [refresh]);
 
   return (
     <div className="font-poppins text-white sm:w-[400px] w-full h-[175px] bg-zinc-800 rounded-xl mt-7 p-3 border-2 border-solid border-zinc-800 hover:border-secondary">
