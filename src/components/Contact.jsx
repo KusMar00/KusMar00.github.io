@@ -1,10 +1,12 @@
 import styles from "../styles";
 import { FiMail, FiLinkedin, FiGithub, FiSend } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { FiCheck } from "react-icons/fi";
 
 const Contact = () => {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setMessageSent(() => !messageSent);
         },
         (error) => {
           console.log(error.text);
@@ -67,33 +69,42 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="md:mt-0 mt-6 text-black flex flex-col justify-around items-center md:w-[49%] w-full font-poppins text-xl bg-zinc-800 rounded-xl h-[320px] p-8 border-2 border-solid border-zinc-800 hover:border-secondary"
         >
-          <div className="w-full flex justify-between items-center">
-            <input
-              className="mb-2 bg-zinc-300 rounded w-[49%] p-2"
-              type="text"
-              name="user_name"
-              required
-              placeholder="Name"
-            />
-            <input
-              className="mb-2 bg-zinc-300 rounded w-[49%] p-2"
-              type="email"
-              name="user_email"
-              required
-              placeholder="Email"
-            />
-          </div>
-          <textarea
-            className="mb-3 bg-zinc-300 rounded w-full p-2 resize-none h-full"
-            name="message"
-            required
-            placeholder="Message"
-          />
-          <input
-            className=" w-full h-[80px] bg-zinc-700 rounded text-white border-2 border-solid border-zinc-700 hover:border-secondary"
-            type="submit"
-            value="Send Now"
-          />
+          {!messageSent && (
+            <>
+              <div className="w-full flex justify-between items-center">
+                <input
+                  className="mb-2 bg-zinc-300 rounded w-[49%] p-2"
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Name"
+                />
+                <input
+                  className="mb-2 bg-zinc-300 rounded w-[49%] p-2"
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Email"
+                />
+              </div>
+              <textarea
+                className="mb-3 bg-zinc-300 rounded w-full p-2 resize-none h-full"
+                name="message"
+                required
+                placeholder="Message"
+              />
+              <input
+                className=" w-full h-[80px] bg-zinc-700 rounded text-white border-2 border-solid border-zinc-700 hover:border-secondary"
+                type="submit"
+                value="Send Now"
+              />
+            </>
+          )}
+          {messageSent && (
+            <div className="text-secondary p-3 border-4 border-solid border-secondary rounded-full text-5xl">
+              <FiCheck />
+            </div>
+          )}
         </form>
       </div>
     </section>
