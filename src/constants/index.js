@@ -1,4 +1,4 @@
-import { portfolio, itu, satlasNews } from "../assets";
+import { portfolio, itu, satlasNews, customcase } from "../assets";
 
 export const navLinks = [
   {
@@ -41,6 +41,15 @@ export const skills = [
 ];
 
 export const experience = [
+  {
+    id: "customcase",
+    title: "CustomCase",
+    description:
+      "A webshop for a company that builds customizable wall-to-wall shelves. Currently in development.",
+    tags: ["ReactJS", "Typescript", "Tailwind", "GH Actions", "Digital Ocean"],
+    img: customcase,
+    siteUrl: "https://lionfish-app-n92wy.ondigitalocean.app/",
+  },
   {
     id: "itu",
     title: "BSc, Software Development",
